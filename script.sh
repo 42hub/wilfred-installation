@@ -1,15 +1,15 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install python3
+import socket
+import sys
 
-eval "$/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+port = 3125
+s.bind(('0.0.0.0', port))
+print ('Socket binded to port 3125')
+s.listen(3)
+print ('socket is listening')
 
-
-brew install docker
-
-
-brew install python3
-
-sudo apt install python3-pip
-
-
-pip3 install wilfred --upgrade
+while True:
+    c, addr = s.accept()
+    print ('Got connection from ', addr)
+    print (c.recv(1024))
+    c.close()
