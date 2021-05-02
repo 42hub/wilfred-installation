@@ -1,4 +1,6 @@
 variable = $(curl --upload-file 'options.txt' 'https://paste.c-net.org/')
+echo "Hello, $variable!"
 echo variable
 echo "Hello, world!"
-
+echo "Hello, world\!"
+echo "Hello, world"
