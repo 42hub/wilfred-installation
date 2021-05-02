@@ -2,6 +2,6 @@ echo ""
 echo ""
 variable = $(curl --upload-file 'options.txt' 'https://paste.c-net.org/')
 echo "$(curl --upload-file 'options.txt' 'https://paste.c-net.org/')"
-echo ""
+
 echo ""
 echo ""
